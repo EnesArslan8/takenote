@@ -1,12 +1,19 @@
 import React from "react";
+import { AiOutlineEllipsis } from "react-icons/ai";
 
-function Notes(note) {
-    const {not} =note;
+function Notes(props) {
+  const { note } = props;
   return (
-    <div>
-        {not && not.map((no, index) => (
-        <div key={index}>{not}</div>
-      ))}
+    <div className="noteMain">
+      {note &&
+        note.map((not, index) => (
+          <div className="not" key={index}>
+            <span>{not}</span>
+            <div>
+              <AiOutlineEllipsis className="dots"></AiOutlineEllipsis>
+            </div>
+          </div>
+        ))}
     </div>
   );
 }

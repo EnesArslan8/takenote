@@ -19,9 +19,9 @@ function App() {
   return (
     <div className="App">
       <h1 className='title'> Not Alıcı</h1>
-      <div>
+      <div className='inputArea'>
         <input value={inputText} onChange={(e)=>setInputText(e.target.value)}></input>
-        <AiOutlinePlus onClick={addNote}></AiOutlinePlus>
+        <AiOutlinePlus className='addBtn' onClick={addNote}></AiOutlinePlus>
       </div>
       <Notes note={note}></Notes>
       
