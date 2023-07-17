@@ -1,8 +1,11 @@
-import React from "react";
+import { React } from "react";
 import { AiOutlineEllipsis } from "react-icons/ai";
 
 function Notes(props) {
   const { note } = props;
+ 
+
+
   return (
     <div className="noteMain">
       {note &&

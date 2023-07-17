@@ -81,6 +81,7 @@ html {
   -webkit-line-clamp: 14; /* Metnin kaç satıra sığacağını belirtin */
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-weight: 600;
 }
 .dots {
   position: absolute;

@@ -1,21 +1,21 @@
-import { useState} from 'react';
+import { useEffect, useState} from 'react';
 import './App.css';
 import  {AiOutlinePlus}  from "react-icons/ai";
 import Notes from './components/Notes';
-
+import { useLocalStorage } from './useLocalStorage';
 
 
 function App() {
   const [inputText,setInputText]=useState("");
-  const [note,setNote]=useState([])
-
+  const [note,setNote]=useLocalStorage('notesData', []);
+ 
+  
   
   const addNote=()=>{
     setNote([...note,inputText]);
     setInputText("");
   }
-
-  console.log(note)
+  
   return (
     <div className="App">
       <h1 className='title'> Not Alıcı</h1>
