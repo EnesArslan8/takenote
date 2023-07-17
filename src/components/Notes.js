@@ -20,6 +20,7 @@ function Notes(props) {
       background: "rgba(0,0,0,.6)",
       maxWidth: "35%",
       maxHeight: "70%",
+      
     },
   };
 
@@ -67,7 +68,7 @@ function Notes(props) {
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 style={customStyles}
-            
+                overlayClassName="Overlay"
               >
                 <button
                   style={{

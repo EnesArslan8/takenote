@@ -12,8 +12,10 @@ function App() {
   
   
   const addNote=()=>{
-    setNote([...note,inputText]);
-    setInputText("");
+    if(inputText.trim()!==""){
+      setNote([...note,inputText]);
+      setInputText("");
+    }
   }
   
   return (
