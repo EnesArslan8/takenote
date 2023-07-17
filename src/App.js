@@ -1,4 +1,4 @@
-import { useEffect, useState} from 'react';
+import {  useState} from 'react';
 import './App.css';
 import  {AiOutlinePlus}  from "react-icons/ai";
 import Notes from './components/Notes';
@@ -23,7 +23,7 @@ function App() {
         <input value={inputText} onChange={(e)=>setInputText(e.target.value)}></input>
         <AiOutlinePlus className='addBtn' onClick={addNote}></AiOutlinePlus>
       </div>
-      <Notes note={note}></Notes>
+      <Notes setNote={setNote} note={note}></Notes>
       
       
     </div>
