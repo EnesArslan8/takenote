@@ -23,7 +23,7 @@ function App() {
         <input value={inputText} onChange={(e)=>setInputText(e.target.value)}></input>
         <AiOutlinePlus onClick={addNote}></AiOutlinePlus>
       </div>
-      {/* <Notes note={note}></Notes> */}
+      <Notes note={note}></Notes>
       
       
     </div>
